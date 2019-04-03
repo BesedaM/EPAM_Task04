@@ -1,0 +1,142 @@
+Reading the text file...
+
+Parsing the file...
+
+Cloning the parsed data...
+
+Printing out parsed text...
+
+
+Manipulating Relative Distringuished Name (RDN).
+The class javax.naming.ldap.Rdn represents a Relative Distinguished name (RDN) as specified in RFC 2253. An RDN represents a component of a DN as explained in the Manipulating LdapName lesson. An RDN is made up of type and value pair(s). Examples of RDNs are:
+- OU=Sun;
+- OU=Sales+CN=J.Smith.
+The above example shows a representation of a multi-valued RDN.
+The Rdn class provides methods to access name/value pair(s) of an RDN, obtain its string representation, retrieve an Attributes view, compare and determine equality of RDNs and methods to escape and unescape the value part of the RDN.
+The Rdn class is immutable.
+Constructing an Rdn.
+An Rdn can be constructed with the specified name and value pair, if it's a single name/value paired RDN. For a multi-valued RDN, you should create an attribute set consisting of all the name/value pairs and use a constructor that takes Attributes as an argument. You can also create an Rdn from its string representation specified in RFC 2253. Finally, you can clone an Rdn using its copy constructor. Here is an example that creates RDNs using different types of constructors.
+Rdn rdn1 = new Rdn("ou= Juicy\\, Fruit");
+System.out.println("rdn1:" + rdn1.toString());
+Rdn rdn2 = new Rdn(rdn1);
+Accessing type/value pairs of an RDN.
+The type/values of and RDN can be obtained using the methods below:
+- getType();
+- getValue();
+- toAttributes().
+For a an RDN made up of single type/value pair, the getType()method returns the type and the getValue() method returns the value of the RDN. The method toAttributes() returns the attribute view of the type/value pairs. The example below prints the type/value pairs of RDNs.
+Attributes attrs = new BasicAttributes();
+attrs.put("o", "Yellow");
+attrs.put("cn", "Mango");
+// create a binary value for the RDN
+byte[] mangoJuice = new byte[6];
+
+Print out the sentences in order of their increasing length...
+
+20 Constructing an Rdn.
+27 The Rdn class is immutable.
+37 Accessing type/value pairs of an RDN.
+45 An RDN is made up of type and value pair(s). 
+48 Manipulating Relative Distringuished Name (RDN).
+54 The example below prints the type/value pairs of RDNs.
+56 Examples of RDNs are:
+- OU=Sun;
+- OU=Sales+CN=J.Smith.
+58 Finally, you can clone an Rdn using its copy constructor. 
+63 The above example shows a representation of a multi-valued RDN.
+75 Here is an example that creates RDNs using different types of constructors.
+78 The method toAttributes() returns the attribute view of the type/value pairs. 
+81 You can also create an Rdn from its string representation specified in RFC 2253. 
+88 An RDN represents a component of a DN as explained in the Manipulating LdapName lesson. 
+105 The class javax.naming.ldap.Rdn represents a Relative Distinguished name (RDN) as specified in RFC 2253. 
+106 An Rdn can be constructed with the specified name and value pair, if it's a single name/value paired RDN. 
+115 The type/values of and RDN can be obtained using the methods below:
+- getType();
+- getValue();
+- toAttributes().
+141 For a an RDN made up of single type/value pair, the getType()method returns the type and the getValue() method returns the value of the RDN. 
+158 For a multi-valued RDN, you should create an attribute set consisting of all the name/value pairs and use a constructor that takes Attributes as an argument. 
+234 The Rdn class provides methods to access name/value pair(s) of an RDN, obtain its string representation, retrieve an Attributes view, compare and determine equality of RDNs and methods to escape and unescape the value part of the RDN.
+
+
+Print out the sentences in order of their decreasing length...
+
+234 The Rdn class provides methods to access name/value pair(s) of an RDN, obtain its string representation, retrieve an Attributes view, compare and determine equality of RDNs and methods to escape and unescape the value part of the RDN.
+158 For a multi-valued RDN, you should create an attribute set consisting of all the name/value pairs and use a constructor that takes Attributes as an argument. 
+141 For a an RDN made up of single type/value pair, the getType()method returns the type and the getValue() method returns the value of the RDN. 
+115 The type/values of and RDN can be obtained using the methods below:
+- getType();
+- getValue();
+- toAttributes().
+106 An Rdn can be constructed with the specified name and value pair, if it's a single name/value paired RDN. 
+105 The class javax.naming.ldap.Rdn represents a Relative Distinguished name (RDN) as specified in RFC 2253. 
+88 An RDN represents a component of a DN as explained in the Manipulating LdapName lesson. 
+81 You can also create an Rdn from its string representation specified in RFC 2253. 
+78 The method toAttributes() returns the attribute view of the type/value pairs. 
+75 Here is an example that creates RDNs using different types of constructors.
+63 The above example shows a representation of a multi-valued RDN.
+58 Finally, you can clone an Rdn using its copy constructor. 
+56 Examples of RDNs are:
+- OU=Sun;
+- OU=Sales+CN=J.Smith.
+54 The example below prints the type/value pairs of RDNs.
+48 Manipulating Relative Distringuished Name (RDN).
+45 An RDN is made up of type and value pair(s). 
+37 Accessing type/value pairs of an RDN.
+27 The Rdn class is immutable.
+20 Constructing an Rdn.
+
+
+
+Replace first word in each sentence with last word of the sentence...
+
+RDN Relative Distringuished Name (Manipulating).
+RFC class javax.naming.ldap.Rdn represents a Relative Distinguished name (RDN) as specified in The 2253. lesson RDN represents a component of a DN as explained in the Manipulating LdapName An. s RDN is made up of type and value pair(An). Smith of RDNs are:
+- OU=Sun;
+- OU=Sales+CN=J.Examples.
+RDN above example shows a representation of a multi-valued The.
+RDN Rdn class provides methods to access name/value pair(s) of an RDN, obtain its string representation, retrieve an Attributes view, compare and determine equality of RDNs and methods to escape and unescape the value part of the The.
+immutable Rdn class is The.
+Rdn an Constructing.
+RDN Rdn can be constructed with the specified name and value pair, if it's a single name/value paired An. argument a multi-valued RDN, you should create an attribute set consisting of all the name/value pairs and use a constructor that takes Attributes as an For. RFC can also create an Rdn from its string representation specified in You 2253. constructor, you can clone an Rdn using its copy Finally. constructors is an example that creates RDNs using different types of Here.
+Rdn rdn1 = new Rdn("ou= Juicy\\, Fruit");
+System.out.println("rdn1:" + rdn1.toString());
+Rdn rdn2 = new Rdn(rdn1);
+RDN type/value pairs of an Accessing.
+toAttributes type/values of and RDN can be obtained using the methods below:
+- getType();
+- getValue();
+- The().
+RDN a an RDN made up of single type/value pair, the getType()method returns the type and the getValue() method returns the value of the For. pairs method toAttributes() returns the attribute view of the type/value The. RDNs example below prints the type/value pairs of The.
+Attributes attrs = new BasicAttributes();
+attrs.put("o", "Yellow");
+attrs.put("cn", "Mango");
+// create a binary value for the RDN
+byte[] mangoJuice = new byte[6];
+
+Remove from sentences words starts consonant with 5 symbols length...
+
+RDN Relative Distringuished Name (Manipulating).
+RFC  .naming.ldap.Rdn represents a Relative Distinguished name (RDN) as specified in The 2253. lesson RDN represents a component of a DN as explained in the Manipulating LdapName An. s RDN is made up of type and  pair(An).  of RDNs are:
+- OU=Sun;
+- OU=+CN=J.Examples.
+RDN above example  a representation of a -valued The.
+RDN Rdn  provides methods to access name/ pair(s) of an RDN, obtain its string representation, retrieve an Attributes view, compare and determine equality of RDNs and methods to escape and unescape the  part of the The.
+immutable Rdn  is The.
+Rdn an Constructing.
+RDN Rdn can be constructed with the specified name and  pair, if it's a single name/ paired An. argument a -valued RDN, you should create an attribute set consisting of all the name/  and use a constructor that  Attributes as an For. RFC can also create an Rdn from its string representation specified in You 2253. constructor, you can  an Rdn using its copy Finally. constructors is an example that creates RDNs using different  of Here.
+Rdn rdn1 = new Rdn("ou= Juicy\\, Fruit");
+System.out.println("rdn1:" + rdn1.toString());
+Rdn rdn2 = new Rdn(rdn1);
+RDN type/  of an Accessing.
+toAttributes type/values of and RDN can be obtained using the methods :
+- getType();
+- getValue();
+- The().
+RDN a an RDN made up of single type/ pair, the getType()method returns the type and the getValue() method returns the  of the For.  method toAttributes() returns the attribute view of the type/ The. RDNs example  prints the type/  of The.
+Attributes attrs = new BasicAttributes();
+attrs.put("o", "Yellow");
+attrs.put("cn", "Mango");
+// create a binary value for the RDN
+byte[] mangoJuice = new byte[6];
+
